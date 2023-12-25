@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+
+ /* headerContent */
+
+  #navigation { 
+    position: fixed;
+    top: 10px;
+    left: 5%;
+    padding: 5px;
+    font-size: 35px;
+    transition: background-color 1s ease; 
+    border-radius: 1s ease;
+    transform: translateX(-50%); 
+    color: rgb(255, 255, 255);
+    mix-blend-mode:exclusion;
+  }
+      
+  #navigation:hover {
+    color: #000000fb;
+    background-color: #edcecefb; 
+    
+  }
+
+ /* sectionContent */
+
+ .landingContent {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+  }
+
+  .section-title {
+    position:absolute;
+    padding-left: 36%;
+    padding-top: 20px; 
+    display:flex;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-title-a {
+    position:absolute;
+    padding-left: 36%;
+    padding-top: 20px; 
+    display:flex;
+    color: #000000;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .section-content {
+    height: 100vh;
+    padding-left: 20px;
+    border: 10px;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+  }
+ 
+  #section1 {
+    background-color: #EBEFEE;
+  }
+
+  #section4 {
+    background-color: #EBEFEE;
+  }
+
+  #section5 {
+    background-color: #EBEFEE;
+  }
+
+ /* textContent */
+ 
+ .text-section {
+    margin-top: 10px;
+    max-width: 1000px; 
+    font-size: 20px;
+    align-items: center;
+    justify-content:center;
+    text-align: left; 
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: hard-light;
+    color: #ffffff;
+  }
+
+  #about-us {
+    margin-top: 340px;
+    max-width: 800px; 
+    border: 10px;
+    font-size: 30px;
+    text-align: left;
+    align-items: center;
+    justify-content: left; 
+  }
+
+ /* Positioning for each text section */
+
+  .text-section:nth-child(1) {
+    top: 50px; 
+    left: 100px; 
+  }
+
+  .text-section:nth-child(2) {
+    position: relative;
+    top: 170px; 
+    left: 40px; 
+  }
+
+  .text-section:nth-child(3) {
+    position: relative;
+    top: 375px; 
+    left: 60px; 
+  }
+
+  .text-section:nth-child(4) {
+    position: relative;
+    top: 550px; 
+    left: 100px; 
+  }
+
+ /*carousel */
+  .carousel-container {
+    margin-top: 150px;
+    margin: auto;
+    max-width: 60%;
+  }
+ 
+ /* scrollButtons */
+
+  #startButton {
+    padding: 10px;
+    font-size: 40px;
+    transition: background-color 0.3s ease; 
+    border-radius: 0.5s ease;
+  }
+
+  #startButton:hover {
+    color: #7ff747fb;
+    background-color: #000000;
+  } 
+
+  #scrollButton {
+    align-self: flex-end;
+    padding: 5px;
+    font-size: 29px;
+    margin-right: 10px; 
+    margin-bottom: 450px; 
+    mix-blend-mode:luminosity;
+    transition: background-color 0.3s ease; 
+    color: rgb(0, 0, 0);
+    border-radius: 0.5s ease;
+  }
+
+  #scrollButton:hover {
+    color: #9af571fb;
+    background-color: #000000;
+  } 
+
+  #finalScrollButton {
+    align-self: flex-end;
+    padding: 5px;
+    font-size: 30px; 
+    margin-right: 20px; 
+    margin-bottom: 430px; 
+    transition: background-color 0.3s ease; 
+    border-radius: 0.5s ease;
+  }
+
+  #finalScrollButton:hover {
+    color: #f41441;
+    background-color: #000000;
+  }
+
+  /* footerContent */
+
+  .bottom-right-text {
+    position: fixed;
+    font-size: 20px;
+    bottom: 3.5px;
+    right: 50px; 
+    color: #E1E1E1;
+    mix-blend-mode: difference;
+    padding: 20px;
+    padding-bottom: -5px;
+  }
+
+  .bottom-right-logo {
+    position: fixed;
+    bottom:5px;
+    right:10px;
+  }
+
+  .bottom-right-logo img {
+    width:50px; 
+    height:auto;
+  }
+
+  button {
+    margin: 5px;
+    padding: 30px;
+    font-size: 16px;
+  }

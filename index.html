@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+  <title>ToPlayOrNot</title>
+</head>
+
+<body>
+
+  <div id="section1" class="landingContent" >  
+    <div class="animation-form">
+        <sl-animation name="rubberBand" duration="1000" iterations="1">
+          <sl-button variant="primary" id="startButton" onclick="delayedScrollToNextSection(2)">START</sl-button>
+        </sl-animation>
+    </div>
+  </div>
+
+  <div id="section2" class="section-content" style="background-image: url('images/link6.jpg');">
+    <div class="section-title">
+        <h1>Advantages of Online Gaming</h1>
+    </div>
+    
+    <div class="text-section">
+        <h2>Promotes Social Interaction</h2>
+        <p>Online gaming creates a sense of community online amongst players, encouraging teamwork and communication.</p>
+      </div>
+  
+      <div class="text-section">
+        <h2>Jack of all trades</h2>
+        <p>The wide variety of different genres makes it really convenient for players to find games that tap into their true interests and preferences. </p>
+      </div>
+  
+      <div class="text-section">
+        <h2>Skills Development</h2>
+        <p>Skills development is also a major part of online gaming. The cognitive skills, hand-eye coordination, strategic and critical thinking skills are at the forefront of most online games.</p>
+      </div>
+
+      <sl-button id="scrollButton" onclick="scrollToSection(3)">Scroll to Section 3</sl-button>
+    </div>
+        
+  </div>
+
+  <div id="section3" class="section-content" style="background-image: url('images/link2.jpg');"> 
+    <div class="section-title">
+        <h1>Disadvantages of Online Gaming</h1>
+    </div>
+    
+    <div class="text-section">
+        <h2>Careful not to get lost</h2>
+        <p>The addictive nature of some online games makes it hard for gamers to cope with real-life responsibilities and maintain relationships, while losing any sense of time.</p>
+    </div>
+  
+    <div class="text-section">
+        <h2>Mind and Body</h2>
+        <p>Repetitive strain injuries also known as RSIs and mental health complications might emerge from heavy gaming habits. Loss of motivation and a general lack of interest in socializing face-to-face is a common issue amongst most gamers.</p>
+    </div>
+  
+    <div class="text-section">
+        <h2>Where is my piggy bank? </h2>
+        <p>Games that have microtransactions, in-game purchases or monthly subscriptions are often considered as petty expenses. But, when accumulated and paired with a general fear-of-missing-out make up a big sum of money.</p>
+
+    </div>
+    
+    <sl-button id="scrollButton" onclick="scrollToSection(4)">Scroll to Section 4</sl-button>
+
+  </div>
+
+  <div id="section4" class="section-content">
+    <div class="section-title-a">
+        <h1>Gallery</h1>
+    </div>
+    <div class="carousel-container">
+        <sl-carousel autoplay loop pagination interval="1000">
+            <sl-carousel-item>
+              <img src="images/link3.jpg"/>
+            </sl-carousel-item>
+            
+            <sl-carousel-item>
+              <img src="images/link7.jpg"/>
+            </sl-carousel-item>
+
+            <sl-carousel-item>
+              <img src="images/link8.jpg"/>
+            </sl-carousel-item>
+
+            <sl-carousel-item>
+              <img src="images/link4.jpg"/>
+            </sl-carousel-item>
+        </sl-carousel>
+    </div>
+    <sl-button id="scrollButton" onclick="scrollToSection(5)">Scroll to Section 5</sl-button>
+  </div> 
+
+  <div id="section5" class="section-content">
+    <div class="section-title-a">
+        <h1>About Us</h1>
+    </div>
+    
+    <div id="about-us">
+        <p>We are a non-profit organisation that aims in sensitizing the youth on the benefits and, most importantly, the downturns of online gaming.</p>
+    </div>
+
+    <sl-button id="finalScrollButton" onclick="scrollToSection(1)">Complete</sl-button>
+  </div>
+
+  <div id="navigation" >
+          <sl-button onclick="scrollToNextSection(1)">HOME</sl-button>
+      </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+<footer>
+    <div id="bottomRightText" class="bottom-right-text">ToPlayOrNot</div>
+    <div id="bottomRightLogo" class="bottom-right-logo">
+        <img src="images/logo.png" alt="logo">
+    </div>  
+</footer>
+
+</html>
